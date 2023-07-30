@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://kit.fontawesome.com/4d7faa1cf6.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="./IMAGE/A2.png" type="image/x-icon">
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .geeks {  
+            overflow: hidden;
+            /* margin: 0 auto; */
+          }
+        
+          .geeks img {
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+          }
+        
+          .geeks:hover img {
+            transform: scale(1.5);
+          }
+        .geeks-1 {  
+            overflow: hidden;
+            /* margin: 0 auto; */
+          }
+        
+          .geeks-1 img {
+            /* width: 100%; */
+            transition: 0.5s all ease-in-out;
+          }
+        
+          .geeks-1:hover img {
+            transform: scale(1.2);
+          }
+
+          .image-container {
+            position: relative;
+          }
+          .visit-img{
+            object-fit: cover;
+            transition: filter 0.5s ease;
+          }
+          .visit-btn{
+            position: absolute;
+            visibility: hidden;
+            /* transform: translate(50% 50%); */
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+          }
+
+          .image-container:hover .visit-img {
+            filter: brightness(20%); /* Adjust the brightness value as needed */
+        }
+
+        .image-container:hover .visit-btn {
+            opacity: 1;
+            top: 45%;
+            left: 40%;
+            visibility: visible;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+<header class="relative">
+    <nav class="bg-green-500 border-gray-200 dark:bg-gray-900  sticky top-0 z-40">
+        <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="" class="flex items-center">
+              <img src="./IMAGE/A2.png" class="h-8 mr-3 rounded-full bg-[#26fd26a5]" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-200 dark:text-white">Asif</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:flex md:w-auto" id="navbar-default">
+            <ul class="font-medium block md:flex items-center justify-between gap-2 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row  md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-white hover:text-gray-800 bg-green-600 hover:bg-green-300 rounded  dark:text-white md:dark:text-white font-bold" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold">About</a>
+              </li>
+              <li>
+                <a href="service.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold">Services</a>
+              </li>
+              <li>
+                <a href="projects.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold">Projects</a>
+              </li>
+              <li>
+                <a href="mailto:asifahammednishst@gmail.com" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+   
+    
+</header>
+
+<main>
+ <!-- projects-demo  -->
+    <section class="container mx-auto " id="myproject">
+        <div>
+          <h1 class="text-5xl font-black py-5 px-5 bg-green-300">My projects demo</h1>
+        </div>
+          <div class="carousel w-full rounded-b-3xl">
+              <div id="slide1" class="carousel-item relative w-full ">
+                <!-- <img src="./IMAGE/project-3.png" class="w-full" /> -->
+                <div class="hero bg-green-400 rounded-sm">
+                  <div class="hero-overlay bg-opacity-60 "></div>
+                  <div class="hero-content flex-col md:flex-row md:gap-10 md:p-10 md:px-20 md:py-20 ">
+                      <div class="flex-1 text-white">
+                          <h1 class="text-5xl font-bold">Box Office News!</h1>
+                          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                          <a href="https://asif3359.github.io/Assignment-2-gamer/HTML/index.html" class="btn bg-green-500 text-white hover:text-gray-800 hover:bg-green-300">Get Started</a>
+                     </div>  
+                     <div class="flex-1 geeks ">
+                      <a href="https://asif3359.github.io/Assignment-2-gamer/HTML/index.html"><img src="./IMAGE/project-4.png" class=" rounded-2xl  md:rounded-[80px]" /></a>
+                     </div>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle bg-green-300 hover:bg-green-200">❮</a> 
+                  <a href="#slide2" class="btn btn-circle bg-green-300 hover:bg-green-200">❯</a>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <!-- <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" /> -->
+                <div class="hero bg-green-400 rounded-sm">
+                  <div class="hero-overlay bg-opacity-60 "></div>
+                  <div class="hero-content flex-col md:flex-row gap-10  md:p-10 md:px-20 md:py-20 ">
+                      <div class="flex-1 text-white ">
+                          <h1 class="text-5xl font-bold">Box Office News!</h1>
+                          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                          <a href="https://asif3359.github.io/assignment-3-fruit/" class="btn bg-green-500 text-white hover:text-gray-800 hover:bg-green-300">Get Started</a>
+                     </div>  
+                     <div class="flex-1 geeks ">
+                      <a href="https://asif3359.github.io/assignment-3-fruit/"><img src="./IMAGE/project-3.png" class=" rounded-2xl  md:rounded-[80px]" /></a>
+                     
+                     </div>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle bg-green-300 hover:bg-green-200">❮</a> 
+                  <a href="#slide3" class="btn btn-circle bg-green-300 hover:bg-green-200">❯</a>
+                </div>
+              </div> 
+              <div id="slide3" class="carousel-item relative w-full">
+                <!-- <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" /> -->
+                <div class="hero bg-green-400 rounded-sm">
+                  <div class="hero-overlay bg-opacity-60 "></div>
+                  <div class="hero-content flex-col md:flex-row gap-10 md:p-10 md:px-20 md:py-20 ">
+                      <div class="flex-1 text-white ">
+                          <h1 class="text-5xl font-bold">Box Office News!</h1>
+                          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                          <a href="https://asif3359.github.io/justice/" class="btn bg-green-500 text-white hover:text-gray-800 hover:bg-green-300">Get Started</a>
+                     </div>  
+                     <div class="flex-1 geeks ">
+                      <a href="https://asif3359.github.io/justice/"><img src="./IMAGE/project-2.png" class=" rounded-2xl  md:rounded-[80px]" /></a>
+                     
+                     </div>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle bg-green-300 hover:bg-green-200">❮</a> 
+                  <a href="#slide4" class="btn btn-circle bg-green-300 hover:bg-green-200">❯</a>
+                </div>
+              </div> 
+              <div id="slide4" class="carousel-item relative w-full">
+                <!-- <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" /> -->
+                <div class="hero  bg-green-400 rounded-sm">
+                  <div class="hero-overlay bg-opacity-60 "></div>
+                  <div class="hero-content flex-col md:flex-row gap-10 md:p-10 md:px-20 md:py-20 ">
+                      <div class="flex-1 text-white  ">
+                          <h1 class="text-5xl font-bold">Box Office News!</h1>
+                          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                          <a href="https://asif3359.github.io/talwind-css/" class="btn bg-green-500 text-white hover:text-gray-800 hover:bg-green-300">Get Started</a>
+                     </div>  
+                     <div class="flex-1 geeks ">
+                      <a href="https://asif3359.github.io/talwind-css/"><img src="./IMAGE/project-1.png" class=" rounded-2xl  md:rounded-[80px]" /></a>
+                      
+                     </div>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle bg-green-300 hover:bg-green-200">❮</a> 
+                  <a href="#slide1" class="btn btn-circle bg-green-300 hover:bg-green-200">❯</a>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <!-- galarry  -->
+      <section class="container mx-auto my-5 md:mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+          <div class="grid gap-4">
+              <div class="p-5">
+                <div class=" image-container geeks-1 rounded-[25px] md:rounded-[50px]">
+                  <img class=" visit-img h-auto w-full rounded-[25px] md:rounded-[50px] object-cover border-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-5   border-gray-800 " src="./Projects/game-p.png" alt="">
+                   <div class="visit-btn text-center">
+                    <a href="" class="btn bg-green-400 hover:bg-green-300 hover:text-gray-700  md:px-2 lg:px-10 py-0 lg:py-3 text-sm lg:text-2xl ">Visit</a>
+                    <h1 class="text-white">Visit Demo Project </h1>
+                   </div>
+                </div>
+                  <div class="px-5 mt-5">
+                    <h1 class="text-4xl font-bold mb-5">Game Project Demo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolorum.</p>
+                  </div>
+              </div>
+              <div class="p-5">
+                <div class=" image-container geeks-1 rounded-[25px] md:rounded-[50px]">
+                  <img class=" visit-img h-auto w-full rounded-[25px] md:rounded-[50px] object-cover border-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-5   border-gray-800 " src="./Projects/food-p.png" alt="">
+                   <div class="visit-btn text-center">
+                    <a href="" class="btn bg-green-400 hover:bg-green-300 hover:text-gray-700  md:px-2 lg:px-10 py-0 lg:py-3 text-sm lg:text-2xl ">Visit</a>
+                    <h1 class="text-white">Visit Demo Project </h1>
+                   </div>
+                </div>
+                  <div class="px-5 mt-5 ">
+                    <h1 class="text-4xl font-bold mb-5">Game Project Demo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolorum.</p>
+                  </div>
+              </div>
+            
+              
+          </div>
+          <div class="grid gap-4">
+                <div class="p-5">
+                  <div class=" image-container geeks-1 rounded-[25px] md:rounded-[50px]">
+                    <img class=" visit-img h-auto w-full rounded-[25px] md:rounded-[50px] object-cover border-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-5   border-gray-800 " src="./Projects/justice-p.png" alt="">
+                     <div class="visit-btn text-center w-fit">
+                      <a href="" class="btn bg-green-400 hover:bg-green-300 hover:text-gray-700  md:px-2 lg:px-10 py-0 lg:py-3 text-sm lg:text-2xl ">Visit</a>
+                      <h1 class="text-white">Visit Demo Project </h1>
+                     </div>
+                  </div>
+                  <div class="px-5 mt-5">
+                    <h1 class="text-4xl font-bold mb-5">Game Project Demo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolorum.</p>
+                  </div>
+              </div>
+              <div class="p-5">
+                <div class=" image-container geeks-1 rounded-[25px] md:rounded-[50px]">
+                  <img class=" visit-img h-auto w-full rounded-[25px] md:rounded-[50px] object-cover border-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-5   border-gray-800 " src="./Projects/pengu-p.png" alt="">
+                   <div class="visit-btn text-center">
+                    <a href="" class="btn bg-green-400 hover:bg-green-300 hover:text-gray-700  md:px-2 lg:px-10 py-0 lg:py-3 text-sm lg:text-2xl ">Visit</a>
+                    <h1 class="text-white">Visit Demo Project </h1>
+                   </div>
+                  </div>
+                  <div class="px-5 mt-5">
+                    <h1 class="text-4xl font-bold mb-5">Game Project Demo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolorum.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+      </section>
+
+<section class="container mx-auto my-10">
+  <div class=" text-center bg-green-300 p-10 rounded-2xl space-y-3">
+    <h3 class="text-gray-800 font-semibold">LOOKING FOR AN EXPERT?</h3>
+    <h1 class="text-4xl font-bold text-gray-800">LET'S START A PROJECT TOGETHER</h1>
+    <a href="mailto:asifahammednishst@gmail.com" class=" btn bg-green-300 text-gray-500 hover:text-gray-800 hover:bg-green-200">Contact</a>
+  </div>
+</section>
+    
+</main>
+
+<footer class="bg-gray-700">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center p-5 md:p-10">
+    <div class="flex-1 flex flex-col md:flex-row justify-start items-center gap-5">
+      <img class="w-[200px]  bg-green-500 rounded-full" src="./IMAGE/A2.png" alt="">
+      <h2 class="text-white">Asif Ahammed</h2>
+    </div>
+    <div class=" flex-1 p-5">
+      <div class="mb-3 text-white">
+        <a href="index.html" class="text-xl font-bold mx-2">Home</a>
+        <a href="about.html"class="text-xl font-bold mx-2">About</a>
+        <a href="mailto:asifahammednishst@gmail.com" class="text-xl font-bold mx-2">Contact</a>
+      </div>
+      <div class="text-white flex flex-col md:flex-row justify-start items-center mb-2 gap-2">
+        <div>
+          <p class="text-xl  mx-2">Follow ME on .</p>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/profile.php?id=100091426260291"><i class="fa-brands fa-facebook text-3xl mr-2 text-white"></i></a>
+          <a href="https://www.instagram.com/asif_ahmed_tur/"><i class="fa-brands fa-instagram text-3xl mr-2 text-white"></i></a>
+          <a href="https://www.linkedin.com/in/asif-ahammed-622a85264/"><i class="fa-brands fa-linkedin text-3xl mr-2 text-white"></i></a>
+        </div>
+      </div>
+      <div>
+        <a href="mailto:asifahammednishst@gmail.com" class="  text-green-300 text-base md:text-xl mx-2  ">asifahammednishst@gmail.com</a>
+      </div> 
+     </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+</body>
+</html>
