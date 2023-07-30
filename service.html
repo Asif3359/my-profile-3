@@ -28,7 +28,7 @@
           }
         
           .geeks:hover img {
-            transform: scale(1.5);
+            transform: scale(1.4);
           }
 
           .geeks-1 {  
@@ -66,13 +66,13 @@
           <div class="hidden w-full md:flex md:w-auto" id="navbar-default">
             <ul class="font-medium block md:flex items-center justify-between gap-2 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row  md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a href="index.html" class="block py-2 pl-3 pr-4 text-white hover:text-gray-800 bg-green-600 hover:bg-green-300 rounded  dark:text-white md:dark:text-white font-bold" aria-current="page">Home</a>
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-white hover:text-gray-800 bg-green-600 hover:bg-green-300 rounded  dark:text-white md:dark:text-white font-bold" aria-current="page" >Home</a>
               </li>
               <li>
-                <a href="about.html" class="block py-2 pl-3 pr-4 text-white rounded bg-green-300 hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold" aria-current="page">About</a>
+                <a href="about.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold">About</a>
               </li>
               <li>
-                <a href="service.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold">Services</a>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded bg-green-300 hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold" >Services</a>
               </li>
               <li>
                 <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-green-300 md:border-0 hover:text-gray-800  dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray-800 md:dark:hover:bg-transparent font-bold">Pricing</a>
@@ -87,22 +87,33 @@
 </header>
 
 <main>
-    <section class=" container mx-auto bg-green-300 p-2 lg:p-10 rounded-b-xl">
-        <div class="hero ">
-            <div class="hero-content flex-col md:flex-row gap-10 p-5 md:p-10">
-                <div class="flex-1 w-4/5 mx-auto ">
-                    <img src="./IMAGE/my-image.jpg" class=" opacity-75 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-5 rounded-[100px] border-2 border-gray-800" />
-                </div>
-                <div class="flex-1 text-center md:text-left">
-                  <h1 class="text-2xl font-semibold text-green-700">About My Self</h1>
-                    <h1 class="text-5xl font-bold">Who Am I?</h1>
-                    <p class="py-6 font-medium ">I'm Asif Ahammed, an experienced <span class="text-green-700 font-semibold">Frontend Web Developer and Web Designer </span>Dhaka Bangladesh from . I specialize in designing and developing websites that not only look great but also help businesses generate leads and sales.
-                    </p>
-                    <p class="pb-6 font-medium ">Currently, I work at Exploro as a Frontend Developer, where I use my skills and expertise to help build websites that exceed clients' expectations. With almost 1 years of experience in the industry, I have honed my skills in using various technologies to build websites that are both visually appealing and highly functional.</p>
-                    <!-- <button class="btn bg-green-500 text-white hover:text-gray-800 hover:bg-green-300">Learn More</button> -->
-               </div>
+    <section class=" container mx-auto bg-green-300  rounded-b-xl">
+            <div class="pt-6">
+              <h1 class="text-green-700 text-6xl text-center font-black"> My Services </h1>
             </div>
-          </div>
+        
+                <div class=" flex justify-between items-center flex-col md:flex-row-reverse pt-10 pb-5  px-10 gap-5">
+                  <div class="flex-1 geeks border-2 border-gray-800 rounded-[50px] ">
+                    <img src="./IMAGE/web-devjpg.jpg" class=" rounded-[50px]  p-5 lg:10  object-cover " />
+                  </div>
+                    <div class="flex-1 text-center md:text-left">
+                      <h1 class="text-4xl font-semibold text-green-700">Web Development</h1>
+                      <p class="py-6 font-medium ">
+                      As a Web developer, I have experience with a wide range of technologies. I specialize in front-end development but also have expertise in back-end development. I've worked with many popular JavaScript frameworks, including React and Node.js, as well as CSS libraries like Bootstrap, Material UI, SASS, Tailwind and more.</p>
+                    </div>
+
+                </div>
+                <div class=" flex justify-between items-center flex-col md:flex-row  pb-10 px-10 gap-5">
+                    <div class="flex-1 geeks border-2 border-gray-800 rounded-[50px]">
+                      <img src="./IMAGE/Responsive.png" class=" rounded-[50px]  p-5 lg:10  object-cover " />
+                    </div>
+                      <div class="flex-1 text-center md:text-left">
+                        <h1 class="text-4xl font-semibold text-green-700">Custom Website</h1>
+                        <p class="py-6 font-medium ">
+                          To stay competitive in the online marketplace, responsive websites are essential for your business. A website's responsiveness means that it automatically adjusts to different screen sizes and formats which is important because people use a number of devices when browsing on the internet including tablets, smart phones, laptops or desktops.</p>
+                      </div>
+                </div>
+          
     </section>
 
     <!-- secton skills  -->
@@ -149,71 +160,6 @@
       </div>
     </section>
 
-    
-    <section class="container mx-auto my-4">
-      <div class="first-resume-container">
-          <h2 class="text-4xl font-extrabold text-center py-5 my-5"> My Resume</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
-          
-              <!-- <div class="space-y-5 flex-1"> -->
-                  <div class=" flex flex-col lg:flex-row  gap-3 justify-center items-center md:justify-start md:items-start p-5 lg:p-0 text-center  md:text-start ">
-                    <div>
-                      <i class="fa-solid fa-graduation-cap text-2xl font-extrabold"></i>
-                    </div>
-                    <div>
-                      <h2 class="text-2xl font-extrabold mb-3"> Education</h2>
-                      <h3 class=" text-base font-bold">Bangladesh University Of Businesses and Technology </h3>
-                      <h4 class=" font-semibold">BSc. in. Computer Science Engineering</h4>
-                      <span>2022-2023</span>
-                      <p class=""> <i class="fa-solid fa-location-dot"></i> Mirpur, Dhaka, Bangladesh</p>
-                    </div>
-                  </div>
-                 
-                 <div class=" flex flex-col lg:flex-row  gap-3 justify-center items-center md:justify-start md:items-start p-5 lg:p-0 text-center  md:text-start ">
-                  <div>
-                    <i class="fa-solid fa-house-user text-2xl font-extrabold"></i>
-                  </div>
-                  <div>
-                    <h2 class="text-2xl font-extrabold mb-3"> Address</h2>
-                    <h3 class=" text-base font-bold"><i class="fa-solid fa-location-dot"></i> Present Address </h3>         
-                    <p class="">  Mirpur, Dhaka, Bangladesh</p>
-                    <h3 class=" text-base font-bold mt-2"><i class="fa-solid fa-location-dot"></i> permanent Address </h3>         
-                    <p class="">  Mirpur, Dhaka, Bangladesh</p>
-
-                  </div>
-                </div>
-
-              <!-- </div> -->
-
-              <!-- <div class="space-y-5 flex-1"> -->
-                <div class=" flex flex-col lg:flex-row  gap-3 justify-center items-center md:justify-start md:items-start p-5 lg:p-0 text-center  md:text-start ">
-                  <div>
-                    <i class="fa-solid fa-briefcase text-2xl font-extrabold"></i>
-                  </div>
-                  <div>
-                    <h2 class="text-2xl font-extrabold mb-3"> Work Experience</h2>
-                    <h3 class=" text-base ">I am looking for a job</h3>
-                    <h4 class=" ">I have No job Experience Yet . But i complete some project</h4>
-                    
-                  </div>
-                </div>
-                  
-                  <div class=" flex flex-col lg:flex-row  gap-3 justify-center items-center md:justify-start md:items-start p-5 lg:p-0 text-center  md:text-start ">
-                    <div>
-                      <i class="fa-solid fa-star text-2xl font-extrabold"></i>
-                    </div>
-                    <div>
-                      <h2 class="text-2xl font-extrabold mb-3"> Skills</h2>
-                      <h3 class=" ">I have Well Concept In </h3>
-                      <h4 class=" ">C, C++, HTML, CSS, JavaScript, NodeJs.</h4>
-                      
-                    </div>
-                  </div>
-              <!-- </div> -->
-
-          </div>
-      </div>
-    </section>
 
 <section class="container mx-auto my-10">
   <div class=" text-center bg-green-300 p-10 rounded-2xl space-y-3">
